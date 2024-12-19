@@ -1,5 +1,4 @@
 // pages/RTKApiPage.tsx
-import React from 'react';
 import CommentsList from '../components/CommentsList';
 
 const RTKApiPage = () => {

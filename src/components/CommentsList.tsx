@@ -1,5 +1,5 @@
-import React from 'react';
-import { useGetCommentsQuery } from './commentsApi';
+// import React from 'react';
+// import { useGetCommentsQuery } from './commentsApi';
 
 const CommentsList = () => {
   // Fetch comments using the useGetCommentsQuery hook

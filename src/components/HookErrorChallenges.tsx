@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './HookErrorChallenges.css';
+import { useState } from 'react';
+import './hookErrorChallenges.css';
 
 const challenges = [
   {

@@ -1,5 +1,4 @@
 // pages/HookErrorsPage.tsx
-import React from 'react';
 import { HookErrorChallenges } from '../components/HookErrorChallenges';
 
 const HookErrorsPage = () => {
