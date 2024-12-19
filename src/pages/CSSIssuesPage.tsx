@@ -1,5 +1,4 @@
 // pages/CSSIssuesPage.tsx
-import React from 'react';
 import CSSChallenges from '../components/CSSChallenges';
 
 const CSSIssuesPage = () => {

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './CSSChallenges.css';
+import { useState } from 'react';
+import './cssChallenges.css';
 
 const challenges = [
   {
