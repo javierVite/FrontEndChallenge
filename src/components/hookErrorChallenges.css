@@ -1,0 +1,40 @@
+/* HookErrorChallenges.css */
+
+.hook-challenge-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  margin-right: 5px;
+}
+
+.tab-button.active {
+  background-color: #ddd;
+}
+
+.challenge-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.challenge-code {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px dashed #ccc;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
