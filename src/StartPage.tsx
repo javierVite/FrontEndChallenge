@@ -13,10 +13,12 @@ function StartPage() {
     setIsIncrementEvent
   ]  = useState<boolean>(false);
   const myCount = useRef<number>(0);
-
-
+  const isOverflow = useRef<boolean>(false);
 
   useEffect(()=>{
+    if (isOverflow.current) {
+      return;
+    }
     myCount.current = myCount.current + 1;
     console.log(myCount.current)
     setCount((count) => count + 1)
@@ -27,6 +29,12 @@ function StartPage() {
     setIsIncrementEvent,
     setCount
   ])
+
+  if (count > 25000) {
+    isOverflow.current = true;
+    window.location.href = '/';    
+  }
+
 
   return (
     <>
@@ -46,7 +54,7 @@ function StartPage() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR,          
         </p>
-        <p>Why is my current count {myCount.current} out of sync?</p>
+        <p>Make sure current count {myCount.current} is in sync?</p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

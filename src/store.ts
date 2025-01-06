@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { commentsApi } from './components/commentsApi';
 
+
 export const store = configureStore({
   reducer: {
     [commentsApi.reducerPath]: commentsApi.reducer,

@@ -39,3 +39,12 @@
   white-space: pre-wrap;
   font-family: monospace;
 }
+
+.challenge-comment {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #fff8cd;
+  border-left: 4px solid #ffe600;
+  font-style: italic;
+  color: #555;
+}

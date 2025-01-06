@@ -6,7 +6,7 @@ const challenges = [
     title: '1.) Width/Height Issue',
     description: 'Fix the element so that it can have a specified width and height.',
     code: (
-      <div className="inline-box">This box should be 200px wide and 50px high.</div>
+      <div className="width-height-issue">This box should be 200px wide and 50px high.</div>
     ),
   },
   {
@@ -21,13 +21,18 @@ const challenges = [
   },
   {
     title: '3.) Semantic HTML',
-    description: 'Change the below to use semantic HTML best practices.',
-    code: <input className="my-button" type="button" value="Go to Home" onClick={()=>{window.location.href = './'}}/>,
+    description: 'Fix the semantic issue below',
+    code: <section className="width-height-issue">
+      <h1>Hello World!</h1>
+      <div className="comment">
+        <h1>Good Bye World!</h1>
+      </div>
+    </section>,
   },
   {
     title: '4.) Rookie Mistake',
-    description: 'Find and fix the rookie mistake below',
-    code: <div id="comment-box">This is a comment</div>,
+    description: 'Assume the below is isolated code.  Has no side effects or references. Find and fix the rookie mistake below',
+    code: <div id="comment-box"><span>This is a comment</span></div>,
   },
   {
     title: '5.) Selector Specificity Issue',
@@ -36,7 +41,7 @@ const challenges = [
   },
   {
     title: '6.)Floated Elements',
-    description: 'Ensure the red box is contained with in the blue box.',
+    description: 'The red box should be on the left edge of a blue box.',
     code: (
       <div className="float-container">
         <div className="float-left">Floated Left</div>
@@ -59,7 +64,7 @@ const challenges = [
   },
   {
     title: '9.) Absolute Positioning Issue',
-    description: '"Positioned Element" should aligned to bottom of green box.',
+    description: '"Positioned Element" should aligned at the bottom left corner of the of green box.',
     code: (
       <div className="parent">
         <div className="child">Positioned Element</div>
@@ -67,9 +72,9 @@ const challenges = [
     ),
   },
   {
-    title: '10.) Click Me and Fix',
+    title: '10.) Code to HTML semantic standards ',
     description: 'What is wrong? Please fix.',
-    code: <input type="button" value="CLICK ME!!" onClick={()=>{ window.location.href = './StartPage'}} />,
+    code: <input type="button" value="CLICK ME!!" onClick={()=>{ window.location.href = '/'}} />,
   },
 ];
 

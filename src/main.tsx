@@ -6,9 +6,7 @@ import App from './App.tsx'
 import { Provider } from 'react-redux';
 import { store } from './store';
 // import CommentsList from './CommentsList';
-import { worker } from './mocks/browser';
 
-worker.start().then(() => {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
        <Provider store={store}>
@@ -16,5 +14,4 @@ createRoot(document.getElementById('root')!).render(
     </Provider>
   </StrictMode>,
 )
-});
 
